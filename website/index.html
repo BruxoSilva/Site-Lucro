@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu Site</title>
+    <meta name="description" content="Site simples e responsivo criado com ajuda da IA.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="logo" href="#">MeuSite</a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#recursos">Recursos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <h1>Construa sua presença online</h1>
+          <p>Um template moderno e responsivo para começar rápido.</p>
+          <a class="btn-primary" href="#contato">Começar agora</a>
+        </div>
+      </section>
+
+      <section id="sobre" class="section">
+        <div class="container">
+          <h2>Sobre</h2>
+          <p>Este é um site estático minimalista com HTML, CSS e JavaScript puro. Fácil de editar e publicar.</p>
+        </div>
+      </section>
+
+      <section id="recursos" class="section features">
+        <div class="container grid">
+          <div class="card">
+            <h3>Rápido</h3>
+            <p>Sem dependências pesadas. Carrega em segundos.</p>
+          </div>
+          <div class="card">
+            <h3>Responsivo</h3>
+            <p>Funciona bem em celular, tablet e desktop.</p>
+          </div>
+          <div class="card">
+            <h3>Personalizável</h3>
+            <p>Edite cores, fontes e layout facilmente.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section contact">
+        <div class="container">
+          <h2>Contato</h2>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" required placeholder="Seu nome">
+              <small class="error" data-for="name"></small>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="voce@exemplo.com">
+              <small class="error" data-for="email"></small>
+            </div>
+            <div class="form-row">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Como posso ajudar?"></textarea>
+              <small class="error" data-for="message"></small>
+            </div>
+            <button type="submit" class="btn-primary">Enviar</button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> MeuSite. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
